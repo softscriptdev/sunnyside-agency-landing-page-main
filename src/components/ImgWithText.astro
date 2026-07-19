@@ -40,7 +40,7 @@ const data = [
     data.map(({ title, text, link, linktext, img, color }) => {
       return (
         <article>
-          <img src={"/desktop/" + img.trim()} alt={title.trim()} />
+          <img src={"public/desktop/" + img.trim()} alt={title.trim()} />
           <section>
             <h2>{title.trim()}</h2>
             <p>{text.trim()}</p>
@@ -72,9 +72,12 @@ const data = [
 
       img {
         display: block;
-        width: 100%;
+        width: min(500px, 100%);
+        aspect-ratio: 1/1;
         object-fit: cover;
         object-position: center;
+        margin: 10px auto;
+        border-radius: .75rem;
       }
       section {
         text-align: center;

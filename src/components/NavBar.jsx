@@ -4,7 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar() {
+  // NOTE nav state
   const [shownav, changenav] = useState(false);
+
   return (
     <nav>
       <a href="#">
