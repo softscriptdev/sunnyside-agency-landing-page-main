@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://softscript.github.io",
+  base: "/sunnyside-agency-landing-page-main/",
   integrations: [react()],
-  site: "https://digitaleweltlibrary.github.io",
-  base: "sunnyside-agency-landing-page-main/",
 });
