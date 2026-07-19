@@ -31,7 +31,7 @@ const user = [
       user.map(({ img, text, name, position }) => {
         return (
           <section>
-            <img src={"/" + img} alt={name.trim()} />
+            <img src={img} alt={name.trim()} />
             <p class="text">{text.trim()}</p>
             <p class="name">{name.trim()}</p>
             <p class="position">{position.trim()}</p>

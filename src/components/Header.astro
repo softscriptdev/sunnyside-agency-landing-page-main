@@ -2,8 +2,7 @@
 const { BASE_URL } = import.meta.env;
 ---
 
-<header>
-  <section>
+<header style={`--img: url(${BASE_URL}desktop/image-header.jpg)`}>  <section>
     <h1>We are creatives</h1>
     <a href="#imgwithtext">
       <img src={`${BASE_URL}icon-arrow-down.svg`} alt="arrow" /></a
@@ -14,7 +13,7 @@ const { BASE_URL } = import.meta.env;
 <style lang="scss">
   header {
     height: 40dvh;
-    background-image: url("desktop/image-header.jpg");
+    background-image: var(--img);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
