@@ -1,4 +1,6 @@
 ---
+const { BASE_URL } = import.meta.env;
+
 const data = [
   {
     title: "Transform your brand",
@@ -40,7 +42,7 @@ const data = [
     data.map(({ title, text, link, linktext, img, color }) => {
       return (
         <article>
-          <img src={"public/desktop/" + img.trim()} alt={title.trim()} />
+          <img src={`${BASE_URL}/desktop/` + img.trim()} alt={title.trim()} />
           <section>
             <h2>{title.trim()}</h2>
             <p>{text.trim()}</p>
@@ -77,7 +79,7 @@ const data = [
         object-fit: cover;
         object-position: center;
         margin: 10px auto;
-        border-radius: .75rem;
+        border-radius: 0.75rem;
       }
       section {
         text-align: center;

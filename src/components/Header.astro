@@ -1,7 +1,13 @@
+---
+const { BASE_URL } = import.meta.env;
+---
+
 <header>
   <section>
     <h1>We are creatives</h1>
-    <a href="#imgwithtext"> <img src="public/icon-arrow-down.svg" alt="arrow" /></a>
+    <a href="#imgwithtext">
+      <img src={`${BASE_URL}icon-arrow-down.svg`} alt="arrow" /></a
+    >
   </section>
 </header>
 

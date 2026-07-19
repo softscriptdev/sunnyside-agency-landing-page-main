@@ -1,8 +1,18 @@
+---
+const { BASE_URL } = import.meta.env;
+---
+
 <article>
-  <img src="/public/desktop/image-gallery-milkbottles.jpg" alt="milkbottles" />
-  <img src="/public/desktop/image-gallery-orange.jpg" alt="orange" />
-  <img src="/public/desktop/image-gallery-cone.jpg" alt="cone" />
-  <img src="/public/desktop/image-gallery-sugarcubes.jpg" alt="sugarcubes" />
+  <img
+    src={`${BASE_URL}desktop/image-gallery-milkbottles.jpg`}
+    alt="milkbottles"
+  />
+  <img src={`${BASE_URL}desktop/image-gallery-orange.jpg`} alt="orange" />
+  <img src={`${BASE_URL}desktop/image-gallery-cone.jpg`} alt="cone" />
+  <img
+    src={`${BASE_URL}desktop/image-gallery-sugarcubes.jpg`}
+    alt="sugarcubes"
+  />
 </article>
 
 <style lang="scss">

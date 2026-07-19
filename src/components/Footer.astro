@@ -1,3 +1,7 @@
+---
+const { BASE_URL } = import.meta.env;
+---
+
 <footer>
   <svg width="124" height="24" xmlns="http://www.w3.org/2000/svg"
     ><path
@@ -11,10 +15,10 @@
     <a href="#">Projects</a>
   </section>
   <section class="social">
-    <a href="#"> <img src="/public/icon-facebook.svg" alt="facebook" /></a>
-    <a href="#"> <img src="/public/icon-instagram.svg" alt="instagram" /></a>
-    <a href="#"> <img src="/public/icon-twitter.svg" alt="twitter" /></a>
-    <a href="#"> <img src="/public/icon-pinterest.svg" alt="pinterest" /></a>
+    <a href="#"> <img src={`${BASE_URL}icon-facebook.svg`} alt="facebook" /></a>
+    <a href="#"> <img src={`${BASE_URL}public/icon-instagram.svg`} alt="instagram" /></a>
+    <a href="#"> <img src={`${BASE_URL}icon-twitter.svg`} alt="twitter" /></a>
+    <a href="#"> <img src={`${BASE_URL}icon-pinterest.svg`} alt="pinterest" /></a>
   </section>
 </footer>
 

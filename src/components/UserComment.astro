@@ -1,19 +1,21 @@
 ---
+const { BASE_URL } = import.meta.env;
+
 const user = [
   {
-    img: "public/image-emily.jpg",
+    img: `${BASE_URL}image-emily.jpg`,
     text: " We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
     name: "    Emily R.",
     position: " Marketing Director",
   },
   {
-    img: "public/image-jennie.jpg",
+    img: `${BASE_URL}image-jennie.jpg`,
     text: "    Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
     name: "  Thomas S.",
     position: " Chief Operating Officer",
   },
   {
-    img: "public/image-thomas.jpg",
+    img: `${BASE_URL}image-thomas.jpg`,
     text: " Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
     name: " Jennie F.",
     position: " Business Owner",
